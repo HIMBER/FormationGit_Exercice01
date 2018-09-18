@@ -1,7 +1,9 @@
 # Exercice 01
 
 ## Objectif
+- Utiliser les commandes de base de git pour commiter des fichiers
 
+# Procédure
 - Cloner le dépôt depuis ce dépôt distant dans un dossier en local sur votre poste de travail nommé Exercice01
 - Ajouter un nouvel alias *cm* correspondant à la commande *commit -m*
 - Créer un nouveau fichier vide nommé "temporary_file1.p"
