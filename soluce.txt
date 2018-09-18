@@ -1,0 +1,42 @@
+git clone https://github.com/HIMBER/FormationGit_Exercice01.git .
+
+git config alias.cm "commit -m"
+
+touch temporary_file1.p
+
+git clean -n
+git clean -f
+
+vi logs/20180918.log
+
+touch temporary_file2.p
+
+vi Impression.p
+
+git status
+
+git clean temporary_file2.p -n
+git clean temporary_file2.p -f
+
+mkdir tempMetadata
+cd tempMetadata
+
+touch A.txt B.doc
+
+cd ..
+
+echo "tempMetadata/*.txt" > .gitignore
+git add tempMetadata/
+
+
+git update-index --assume-unchanged logs/*
+# le .gitignore ne fonctionne pas pour des fichiers déjà suivis par git
+
+
+git add Impression.p
+
+git cm "2 fichiers"
+
+git log
+git log --oneline
+git log -p
